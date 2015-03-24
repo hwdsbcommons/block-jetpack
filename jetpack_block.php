@@ -12,7 +12,7 @@ add_filter( 'can_display_jetpack_manage_notice', '__return_false' );
 //function my_plugin_menu_remover() {
 //remove_submenu_page( 'jetpack', 'jetpack' );
 //}
-add_action( 'admin_menu', 'my_plugin_menu_remover', 999 );
+//add_action( 'admin_menu', 'my_plugin_menu_remover', 999 );
 
 function blacklist_jetpack_modules( $modules ){
 $jb_mods_to_disable = array(
