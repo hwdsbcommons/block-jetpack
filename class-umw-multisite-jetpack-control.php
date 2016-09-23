@@ -34,21 +34,16 @@ if ( ! class_exists( 'UMW_Multisite_JetPack_Control' ) ) {
 				'monitor', /* We have other systems in-place to keep an eye on site uptime */
 				'notes', /* We don't want to receive notifications about every little thing that happens throughout the install */
 				'photon', /* Until we have a better chance to investigate how this effects us, we need it turned off */
-				'protect', /* The shared IP across campus was causing false-positive security flags */
-				'shortlinks', /* The wp.me shortlinks seem to be malfunctioning, so let's avoid them */
 				'site-icon', /* We have a single favicon that needs to be used */
 				'verification-tools', /* We don't want them to verify that someone other than us owns the site */
 				'videopress', /* We don't have a VideoPress subscription, so need to confuse users */
 				'vaultpress', /* We don't have a VaultPress subscription, so no need to confuse users */
 				'stats', /* Make sure we're collecting stats on all sites */
-				'json-api', /* Seeing errors in the logs, so let's turn this off  */
 				'comments', /* Seeing errors in the logs, so let's turn this off  */
 				'enhanced-distribution', /* What does this do? */
-				'omnisearch', /* extraneous  */
 				'likes', /* extraneous  */
 				'subscriptions', /* extraneous  */
-
-
+				'sitemaps', /* extraneous  */
 			) );
 		}
 
@@ -62,7 +57,8 @@ if ( ! class_exists( 'UMW_Multisite_JetPack_Control' ) ) {
 				'carousel', /* Very useful, doesn't hurt to have it active */
 				'shortcodes', /* Very useful, doesn't hurt to have it active */
 				'widget-visibility', /* Very useful, doesn't hurt to have it active */
-
+				'custom-css', /* Very useful, doesn't hurt to have it active */
+				'widgets', /* Very useful, doesn't hurt to have it active */
 			) );
 		}
 
