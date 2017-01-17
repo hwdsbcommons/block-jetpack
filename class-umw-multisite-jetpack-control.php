@@ -45,6 +45,7 @@ if ( ! class_exists( 'UMW_Multisite_JetPack_Control' ) ) {
 				'subscriptions', /* extraneous  */
 				'sitemaps', /* extraneous  */
 				'seo-tools', /* extraneous  */
+				'wordads', /* Yuck. Advertising.  */
 			) );
 		}
 
