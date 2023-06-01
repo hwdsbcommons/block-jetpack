@@ -25,29 +25,34 @@ if ( ! class_exists( 'UMW_Multisite_JetPack_Control' ) ) {
 		function get_blocked_modules() {
 			return apply_filters( 'umw-blocked-jetpack-modules', array(
 				'contact-form', /* No need when we have Gravity Forms installed */
+				'protect', /* Might be affecting Login for Large Groups */
+				'publicize', /* Stuck Behind a Paywall Now */
 				'custom-content-types', /* Currently useless */
 				'gravatar-hovercards', /* Causes some JS conflicts throughout the site */
-				'infinite-scroll', /* None of our theme configurations support this */
 				'sso', /* Would conflict with our sign-on system */
 				'manage', /* Would be ridiculous with the number of sites running off of one install */
 				'minileven', /* We don't want a third-party mobile theme */
 				'monitor', /* We have other systems in-place to keep an eye on site uptime */
 				'notes', /* We don't want to receive notifications about every little thing that happens throughout the install */
 				'photon', /* Until we have a better chance to investigate how this effects us, we need it turned off */
+				'photon-cdn', /* Hide the accellerator option  */
 				'site-icon', /* We have a single favicon that needs to be used */
 				'verification-tools', /* We don't want them to verify that someone other than us owns the site */
-				'videopress', /* We don't have a VideoPress subscription, so need to confuse users */
-				'vaultpress', /* We don't have a VaultPress subscription, so no need to confuse users */
-				'stats', /* Make sure we're collecting stats on all sites */
+				'videopress', /* We don't have a VideoPress subscription. No need to confuse users */
+				'vaultpress', /* We don't have a VaultPress subscription. No need to confuse users */
+				'stats', /* We have a different analytics service */
 				'comments', /* Seeing errors in the logs, so let's turn this off  */
 				'enhanced-distribution', /* What does this do? */
 				'likes', /* extraneous  */
 				'subscriptions', /* extraneous  */
 				'sitemaps', /* extraneous  */
 				'seo-tools', /* extraneous  */
-				'wordads', /* Yuck. Advertising.  */
+				'wordads', /* paid  */
 				'google-analytics', /* paid  */
 				'masterbar', /* Hide the WordPress.com Toolbar Option  */
+				'jetpack-search', /* Hide the WordPress.com Search setting which prompts an upgrade  */
+				'search', /* Hide the WordPress.com search Option  */
+				'external-media' /* Hide external media  */
 			) );
 		}
 
